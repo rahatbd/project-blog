@@ -40,7 +40,10 @@ function Header({ initialTheme, className, ...delegated }) {
     >
       <Logo />
       <div className={styles.actions}>
-        <button className={styles.action}>
+        <a
+          href="/rss.xml"
+          className={styles.action}
+        >
           <Rss
             size="1.5rem"
             style={{
@@ -49,7 +52,7 @@ function Header({ initialTheme, className, ...delegated }) {
             }}
           />
           <VisuallyHidden>View RSS feed</VisuallyHidden>
-        </button>
+        </a>
         <button
           className={styles.action}
           onClick={handleToggleTheme}

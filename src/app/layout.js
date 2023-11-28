@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { cookies } from 'next/headers';
 import {
   BLOG_TITLE,
+  BLOG_DESCRIPTION,
   COLOR_THEME_COOKIE_NAME,
   LIGHT_TOKENS,
   DARK_TOKENS,
@@ -28,7 +29,7 @@ const monoFont = Spline_Sans_Mono({
 
 export const metadata = {
   title: BLOG_TITLE,
-  description: 'A wonderful blog about JavaScript',
+  description: BLOG_DESCRIPTION,
 };
 
 function RootLayout({ children }) {
